@@ -17,3 +17,9 @@ Create a class called Point. Upon initialization, it should receive x and y (num
 - set_y(new_y) - changes the y value of the point
 
 - __str__() - returns the coordinates of the point in the format "The point has coordinates ({x},{y})"
+
+    Input: p = Point(2, 4)     Output: The point has coordinates (2,4)
+           print(p)                    The point has coordinates (3,5)
+           p.set_x(3)
+	   p.set_y(5)
+	   print(p)
