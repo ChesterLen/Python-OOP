@@ -23,3 +23,7 @@ Create a class called Point. Upon initialization, it should receive x and y (num
            p.set_x(3)
 	   p.set_y(5)
 	   print(p)
+
+    3. Circle
+Create a class called Circle. Upon initialization, it should receive a radius (number).
+Create a class attribute called pi which should be equal to 3.14. Create 3 instance methods:
