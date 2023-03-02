@@ -8,3 +8,12 @@ Create an instance variable called gadgets - an empty list by default.
            print(car.gadgets)                  	         ['Hudly Wireless']
            car.gadgets.append('Hudly Wireless')
            print(car.gadgets)
+
+    2. Point
+Create a class called Point. Upon initialization, it should receive x and y (numbers). Create 3 instance methods:
+
+- set_x(new_x) - changes the x value of the point
+
+- set_y(new_y) - changes the y value of the point
+
+- __str__() - returns the coordinates of the point in the format "The point has coordinates ({x},{y})"
