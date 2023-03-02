@@ -2,6 +2,8 @@
 Create a class called Vehicle. Upon initialization, it should receive max_speed (integer, optional; 150 by default) and mileage (number).
 Create an instance variable called gadgets - an empty list by default.
 
+    Example:
+
     Input: car = Vehicle(20)                     Output: 150
            print(car.max_speed)                          20
            print(car.mileage)                            []
@@ -18,6 +20,8 @@ Create a class called Point. Upon initialization, it should receive x and y (num
 
 - __str__() - returns the coordinates of the point in the format "The point has coordinates ({x},{y})"
 
+    Example:
+
     Input: p = Point(2, 4)     Output: The point has coordinates (2,4)
            print(p)                    The point has coordinates (3,5)
            p.set_x(3)
@@ -27,6 +31,8 @@ Create a class called Point. Upon initialization, it should receive x and y (num
     3. Circle
 Create a class called Circle. Upon initialization, it should receive a radius (number).
 Create a class attribute called pi which should be equal to 3.14. Create 3 instance methods:
+
+    Example:
 
     Input: circle = Circle(10)        Output: 452.16
            circle.set_radius(12)              75.36
