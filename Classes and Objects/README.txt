@@ -31,3 +31,10 @@ Create a class attribute called pi which should be equal to 3.14. Create 3 insta
     Input: circle = Circle(10)        Output: 452.16
            circle.set_radius(12)              75.36
            print(circle.get_area())
+
+4. Glass
+Create a class called Glass. Upon initialization, it will not receive any parameters. You must create an instance attribute called content which should be equal to 0.
+You should also create a class attribute called capacity which should be 250 ml. Create 3 instance methods:
+ - fill(ml) - fills the glass with the given milliliters if there is enough space in it and returns "Glass filled with {ml} ml", otherwise returns "Cannot add {ml} ml"
+ - empty() - empties the glass and returns "Glass is now empty"
+ - info() - returns info about the glass in the format "{space_left} ml left"
