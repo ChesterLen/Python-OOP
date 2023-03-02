@@ -44,3 +44,12 @@ You should also create a class attribute called capacity which should be 250 ml.
  - fill(ml) - fills the glass with the given milliliters if there is enough space in it and returns "Glass filled with {ml} ml", otherwise returns "Cannot add {ml} ml"
  - empty() - empties the glass and returns "Glass is now empty"
  - info() - returns info about the glass in the format "{space_left} ml left"
+
+    Example:
+
+    Input: glass = Glass()          Output: Glass filled with 100 ml
+           print(glass.fill(100))           Cannot add 200 ml
+           print(glass.fill(200))           Glass is now empty
+           print(glass.empty())             Glass filled with 200 ml
+           print(glass.fill(200))           50 ml left
+           print(glass.info())
