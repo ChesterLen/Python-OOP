@@ -27,3 +27,7 @@ Create a class called Point. Upon initialization, it should receive x and y (num
     3. Circle
 Create a class called Circle. Upon initialization, it should receive a radius (number).
 Create a class attribute called pi which should be equal to 3.14. Create 3 instance methods:
+
+    Input: circle = Circle(10)        Output: 452.16
+           circle.set_radius(12)              75.36
+           print(circle.get_area())
