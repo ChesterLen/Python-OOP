@@ -82,7 +82,7 @@ You should also create 3 additional instance methods:
 	       print(margarita.add_extra('cheese', 1, 1))
 
     5. To-do List
-In this exercise, we are going to create a whole project step-by-step, starting with the project structure:
+You are tasked to create two classes: a Task class and a Section class. 
     project
       __init__.py
       section.py
@@ -134,3 +134,39 @@ The Section class should also have four methods:
                section.add_task(second_task)
 	       print(section.clean_section())
 	       print(section.view_section())
+
+    6. Guild System
+You are tasked to create two classes: a Player class and a Guild class.
+    project
+      __init__.py
+      guild.py
+      player.py
+The Player class should receive a name (string), a hp (int), and a mp (int) upon initialization. The Player also has 2 instance attributes: skills (empty dictionary that will contain the skills of each player and its mana cost) and a guild set to "Unaffiliated" by default.
+The Player class should also have two additional methods:
+    • add_skill(skill_name, mana_cost)
+        ◦ Adds the skill and the corresponding mana cost to the dictionary of skills. Returns "Skill {skill_name} added to the collection of the player {player_name}"
+        ◦ If the skill is already in the collection, returns "Skill already added"
+    • player_info() 
+        ◦ Returns the player's information, including their skills, in this format:
+"Name: {player_name}
+ Guild: {guild_name}
+ HP: {hp}
+ MP: {mp}
+ ==={skill_name_1} - {skill_mana_cost}
+ ==={skill_name_2} - {skill_mana_cost}
+ …
+ ==={skill_name_N} - {skill_mana_cost}"
+
+The Guild class receives a name (string). The Guild should also have one instance attribute players (an empty list which will contain the players of the guild). The class also has 3 additional methods:
+    • assign_player(player: Player)
+        ◦ Adds the player to the guild and returns "Welcome player {player_name} to the guild {guild_name}". Remember to change the player's guild in the player class.
+        ◦ If he is already in the guild, returns "Player {player_name} is already in the guild."
+        ◦ If the player is in another guild, returns "Player {player_name} is in another guild."
+    • kick_player(player_name: str)
+        ◦ Removes the player from the guild and returns "Player {player_name} has been removed from the guild.". Remember to change the player's guild in the player class to "Unaffiliated".
+        ◦ If there is no such player in the guild, returns "Player {player_name} is not in the guild."
+    • guild_info() 
+        ◦ Returns the guild's information, including the players in the guild, in the format:
+"Guild: {guild_name}
+{first_player's info}
+…
