@@ -9,3 +9,17 @@ Create a class called Vet. Upon initialization, it should receive a name (string
     • info()
     • Returns info about the vet, the number of animals in his list and the free space in the clinic:
 "{vet_name} has {number_animals} animals. {space_left_in_clinic} space left in clinic"
+
+    Test code: peter = Vet("Peter")                      Output: Tom registered in the clinic
+               george = Vet("George")                            Cory registered in the clinic
+               print(peter.register_animal("Tom"))               Fishy registered in the clinic
+               print(george.register_animal("Cory"))             Bobby registered in the clinic
+               print(peter.register_animal("Fishy"))             Kay registered in the clinic
+               print(peter.register_animal("Bobby"))             Cory unregistered successfully
+               print(george.register_animal("Kay"))              Silky registered in the clinic
+               print(george.unregister_animal("Cory"))           Molly not in the clinic
+               print(peter.register_animal("Silky"))             Tom unregistered successfully
+               print(peter.unregister_animal("Molly"))           Peter has 3 animals. 1 space left in clinic
+               print(peter.unregister_animal("Tom"))             George has 1 animals. 1 space left in clinic
+               print(peter.info())
+	       print(george.info())
