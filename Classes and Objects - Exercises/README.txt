@@ -249,7 +249,7 @@ The class has three methods:
 									     == Running in the 90s - 3.45
 									     == Around the World - 2.34
 
-    8. Library*
+    8. Library
 Create a class called Library, where the information regarding the users and books rented/available will be stored.
 Create another one called User, where the information for each of the library users will be stored, and Registration class, where user information will be administrated (created/edited/deleted) and stored in the Library records.
     project
