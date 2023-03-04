@@ -31,3 +31,12 @@ The class should also have class attributes max_hours equal to 23, max_minutes e
     • set_time(hours, minutes, seconds) - updates the time with the new values
     • get_time() - returns "{hh}:{mm}:{ss}"
     • next_second() - updates the time with one second (use the class attributes for validation) and returns the new time (use the get_time() method)
+
+    Test code: time = Time(9, 30, 59)       Output: 09:31:00
+               print(time.next_second())
+
+    Test code: time = Time(10, 59, 59)      Output: 11:00:00
+               print(time.next_second())
+
+    Test code: time = Time(23, 59, 59)      Output: 00:00:00
+               00:00:00
