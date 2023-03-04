@@ -171,3 +171,18 @@ The Guild class receives a name (string). The Guild should also have one instanc
           {first_player's info}
           …
           {Nplayer's info}"
+
+    Test code: player = Player("George", 50, 100)             Output: Skill Shield Break added to the collection of the player George
+               print(player.add_skill("Shield Break", 20))            Name: George
+               print(player.player_info())                            Guild: Unaffiliated
+               guild = Guild("UGT")                                   HP: 50
+               print(guild.assign_player(player))                     MP: 100
+               print(guild.guild_info())                              ===Shield Break - 20
+
+								      Welcome player George to the guild UGT
+								      Guild: UGT
+								      Name: George
+								      Guild: UGT
+								      HP: 50
+								      MP: 100
+								      ===Shield Break - 20
