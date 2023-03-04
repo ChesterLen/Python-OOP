@@ -235,3 +235,16 @@ The class has three methods:
                            {album details}
                            ...
                            {album details}"
+
+    Test code: song = Song("Running in the 90s", 3.45, False)        Output: Running in the 90s - 3.45
+               print(song.get_info())                                        Song Around the World has been added to the album Initial D.
+               album = Album("Initial D", song)                              Album Initial D
+               second_song = Song("Around the World", 2.34, False)           == Running in the 90s - 3.45
+               print(album.publish())
+               print(album.publish())                                        Album Initial D has been published.
+               band = Band("Manuel")                                         Band Manuel has added their newest album Initial D.
+               print(band.add_album(album))                                  Album has been published. It cannot be removed.
+               print(band.remove_album("Initial D"))                         Band Manuel
+               print(band.details())                                         Album Initial D
+									     == Running in the 90s - 3.45
+									     == Around the World - 2.34
