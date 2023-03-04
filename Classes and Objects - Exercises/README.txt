@@ -70,3 +70,13 @@ You should also create 3 additional instance methods:
     • make_order()
     • Set the attribute ordered to True and return the following message "You've ordered pizza {pizza_name} prepared with {ingredient: quantity} and the price will be {price}lv.". The ingredients should be separated by a comma and a space ", "
     • Keep in mind that once the pizza is ordered, no further changes are allowed. We should return the following message if the customer tries to change it: "Pizza {name} already prepared, and we can't make any changes!"
+
+    Test code: margarita = PizzaDelivery('Margarita', 11, {'cheese': 2, 'tomatoes': 1})     Output: Wrong ingredient selected! We do not use bacon in Margarita!
+	       margarita.add_extra('mozzarella', 1, 0.5)                                            Please check again the desired quantity of tomatoes!
+	       margarita.add_extra('cheese', 1, 1)                                                  You've ordered pizza Margarita prepared with cheese: 0, tomatoes: 1, mozzarella: 1 and the price will be 9.5lv.
+	       margarita.remove_ingredient('cheese', 1, 1)                                          Pizza Margarita already prepared, and we can't make any changes!
+	       print(margarita.remove_ingredient('bacon', 1, 2.5))
+	       print(margarita.remove_ingredient('tomatoes', 2, 0.5))
+	       margarita.remove_ingredient('cheese', 2, 1)
+	       print(margarita.make_order())
+	       print(margarita.add_extra('cheese', 1, 1))
