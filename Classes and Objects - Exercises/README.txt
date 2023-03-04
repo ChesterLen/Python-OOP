@@ -167,6 +167,7 @@ The Guild class receives a name (string). The Guild should also have one instanc
         ◦ If there is no such player in the guild, returns "Player {player_name} is not in the guild."
     • guild_info() 
         ◦ Returns the guild's information, including the players in the guild, in the format:
-"Guild: {guild_name}
-{first_player's info}
-…
+          "Guild: {guild_name}
+          {first_player's info}
+          …
+          {Nplayer's info}"
