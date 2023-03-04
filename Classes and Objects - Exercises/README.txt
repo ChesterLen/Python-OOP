@@ -121,3 +121,16 @@ The Section class should also have four methods:
      {details of the second task}
      …
      {details of the n task}"
+
+    Test code: task = Task("Make bed", "27/05/2020")                            Output: Go to University
+               print(task.change_name("Go to University"))                              28.05.2020
+               print(task.change_due_date("28.05.2020"))                                Don't forget laptop and notebook
+               task.add_comment("Don't forget laptop")                                  Name: Go to University - Due Date: 28.05.2020
+               print(task.edit_comment(0, "Don't forget laptop and notebook"))          Task Name: Go to University - Due Date: 28.05.2020 is added to the section
+               print(task.details())                                                    Cleared 0 tasks.
+               section = Section("Daily tasks")                                         Section Daily tasks:
+               print(section.add_task(task))                                            Name: Go to University - Due Date: 28.05.2020
+               second_task = Task("Make bed", "27/05/2020")                             Name: Make bed - Due Date: 27/05/2020
+               section.add_task(second_task)
+	       print(section.clean_section())
+	       print(section.view_section())
