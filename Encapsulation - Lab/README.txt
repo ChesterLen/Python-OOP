@@ -20,7 +20,8 @@ Create a class called Mammal. Upon initialization, it should receive a name, a t
     3. Profile
 Create a class called Profile. Upon initialization, it should receive:
   · username: str - the username should be between 5 and 15 characters (inclusive). If it is not, raise a ValueError with the message "The username must be between 5 and 15 characters."
-  · password: str - the password must be at least 8 characters long; it must contain at least one upper case letter and at least one digit. If it does not, raise a ValueError with the message "The password must be 8 or more characters with at least 1 digit and 1 uppercase letter."
+  · password: str - the password must be at least 8 characters long; it must contain at least one upper case letter and at least one digit.
+If it does not, raise a ValueError with the message "The password must be 8 or more characters with at least 1 digit and 1 uppercase letter."
 Hint: Use Getters and Setters to name-mangle them.
 Override the __str__() method of the base class, so it returns: "You have a profile with username: "{username}" and password: {"*" with the length of password}".
 
@@ -50,3 +51,8 @@ Create one public method:
                print(email_validator.validate("georgios@gmail.net"))
                print(email_validator.validate("stamatito@abv.net"))
                print(email_validator.validate("abv@softuni.bg"))
+
+    5. Account
+Create a class called Account. Upon initialization, it should receive an id, a balance, and a pin (all numbers). The pin and the id should be private instance attributes, and the balance should be a public attribute. Create two public instance methods:
+  · get_id(pin) - if the given pin is correct, return the id, otherwise, return "Wrong pin"
+  · change_pin(old_pin, new_pin) - if the old pin is correct, change it to the new one and return "Pin changed", otherwise return "Wrong pin"
