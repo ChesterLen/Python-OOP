@@ -11,3 +11,8 @@ Create a class called Mammal. Upon initialization, it should receive a name, a t
   · make_sound() - returns a string in the format "{name} makes {sound}"
   · get_kingdom() - returns the private kingdom attribute
   · info() - returns a string in the format "{name} is of type {type}"
+
+    Test code: mammal = Mammal("Dog", "Domestic", "Bark")    Output: Dog makes Bark
+               print(mammal.make_sound())                            animals
+               print(mammal.get_kingdom())                           Dog is of type Domestic
+               print(mammal.info())
