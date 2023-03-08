@@ -42,3 +42,11 @@ Create three methods that should not be accessed outside the class:
   · is_domain_valid(domain) - returns whether the domain is in the possible domains list (True/False)
 Create one public method:
   · validate(email) - using the three methods returns whether the email is valid (True/False)
+
+    Test code: mails = ["gmail", "softuni"]                           Output: True
+               domains = ["com", "bg"]                                        False
+               email_validator = EmailValidator(6, mails, domains)            False
+               print(email_validator.validate("pe77er@gmail.com"))            False
+               print(email_validator.validate("georgios@gmail.net"))
+               print(email_validator.validate("stamatito@abv.net"))
+               print(email_validator.validate("abv@softuni.bg"))
