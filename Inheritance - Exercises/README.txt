@@ -21,3 +21,10 @@ Create a zoo project that contains the following classes:
 
 Follow the diagram and create all the classes. Except for the Animal class, each class should inherit from another class, as shown in the diagram. The Animal class should receive a name - string upon initialization.
 Every class should have a constructor, which accepts one parameter: name
+
+    Test code: mammal = Mammal("Stella")                        Output: Animal
+               print(mammal.__class__.__bases__[0].__name__)            Stella
+               print(mammal.name)                                       Reptile
+               lizard = Lizard("John")                                  John
+               print(lizard.__class__.__bases__[0].__name__)
+	       print(lizard.name)
