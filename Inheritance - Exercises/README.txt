@@ -28,3 +28,21 @@ Every class should have a constructor, which accepts one parameter: name
                lizard = Lizard("John")                                  John
                print(lizard.__class__.__bases__[0].__name__)
 	       print(lizard.name)
+
+    3. Players and Monsters
+Your task is to create the following game hierarchy:
+
+    Hero
+      Elf
+        Museelf
+      Wizard
+        DarkWizard
+        SoulMaster
+      Knight
+        DarkKnight
+        BladeKnight
+
+Create a class Hero. It should contain the following attributes:
+    • username: string
+    • level: int
+Override the __str__() method of the base class so it returns: "{name} of type {class_name} has level {level}"
