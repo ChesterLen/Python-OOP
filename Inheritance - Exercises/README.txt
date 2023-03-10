@@ -130,3 +130,13 @@ The class should have products: list - an empty list, which will be containing a
 {product_name2}: {quantity2}
 …
 {product_nameN}: {quantityN}"
+
+    Test code: food = Food("apple")         Output: [apple, water]
+               drink = Drink("water")               water
+               repo = ProductRepository()           apple: 10
+               repo.add(food)                       water: 10
+               repo.add(drink)
+               print(repo.products)
+               print(repo.find("water"))
+               repo.find("apple").decrease(5)
+               print(repo)
