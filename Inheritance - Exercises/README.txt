@@ -46,3 +46,13 @@ Create a class Hero. It should contain the following attributes:
     • username: string
     • level: int
 Override the __str__() method of the base class so it returns: "{name} of type {class_name} has level {level}"
+
+    Test code: hero = Hero("H", 4)                          Output: H
+               print(hero.username)                                 4
+               print(hero.level)                                    H of type Hero has level 4
+               print(str(hero))                                     E of type Elf has level 4
+               elf = Elf("E", 4)                                    Hero
+               print(str(elf))                                      E
+               print(elf.__class__.__bases__[0].__name__)           4
+               print(elf.username)
+               print(elf.level)
