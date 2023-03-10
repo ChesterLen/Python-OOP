@@ -32,15 +32,15 @@ Every class should have a constructor, which accepts one parameter: name
     3. Players and Monsters
 Your task is to create the following game hierarchy:
 
-    Hero
-      Elf
-        Museelf
-      Wizard
-        DarkWizard
-        SoulMaster
-      Knight
-        DarkKnight
-        BladeKnight
+    Hero:
+       Elf:
+         Museelf
+       Wizard:
+         DarkWizard
+         SoulMaster
+       Knight:
+         DarkKnight
+         BladeKnight
 
 Create a class Hero. It should contain the following attributes:
     • username: string
@@ -56,3 +56,28 @@ Override the __str__() method of the base class so it returns: "{name} of type {
                print(elf.__class__.__bases__[0].__name__)           4
                print(elf.username)
                print(elf.level)
+
+    4. Need for Speed
+Create the following hierarchy with the following classes:
+
+    Vehicle:
+      Motorcycle:
+        RaceMotorcycle
+        CrossMotorcycle
+      Car:
+        FamilyCar
+        SportCar
+
+Create a base class Vehicle. It should contain the following attributes:
+    • DEFAULT_FUEL_CONSUMPTION: float (constant)
+    • fuel_consumption: float - represents the fuel consumption per kilometer
+    • fuel: float - represents the quantity of fuel in a specific vehicle
+    • horse_power: int
+Upon initialization, the class should receive fuel and horse_power. The DEFAULT_FUEL_CONSUMPTION value should be set to the fuel_consumption value. 
+Each class should have the following methods:
+    • drive(kilometers) - reduces the fuel based on the traveled kilometers and fuel consumption (km * fuel consumption). Keep in mind that you can start driving the vehicle only if you have enough fuel to finish the driving.
+The default fuel consumption for the different vehicles is:
+    • Vehicle is 1.25
+    • SportCar is 10
+    • RaceMotorcycle is 8
+    • Car is 3
