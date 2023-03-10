@@ -11,6 +11,7 @@ Create a Child class that inherits Person and has the same constructor definitio
     2. Zoo
 Create a zoo project that contains the following classes:
 
+  project:
     Animal:
       Reptile:
          Lizard
@@ -32,15 +33,16 @@ Every class should have a constructor, which accepts one parameter: name
     3. Players and Monsters
 Your task is to create the following game hierarchy:
 
-    Hero:
-       Elf:
-         Museelf
-       Wizard:
-         DarkWizard
-         SoulMaster
-       Knight:
-         DarkKnight
-         BladeKnight
+  project:
+       Hero:
+          Elf:
+            Museelf
+          Wizard:
+            DarkWizard
+            SoulMaster
+          Knight:
+            DarkKnight
+            BladeKnight
 
 Create a class Hero. It should contain the following attributes:
     • username: string
@@ -60,13 +62,14 @@ Override the __str__() method of the base class so it returns: "{name} of type {
     4. Need for Speed
 Create the following hierarchy with the following classes:
 
-    Vehicle:
-      Motorcycle:
-        RaceMotorcycle
-        CrossMotorcycle
-      Car:
-        FamilyCar
-        SportCar
+   project:
+       Vehicle:
+         Motorcycle:
+         RaceMotorcycle
+         CrossMotorcycle
+       Car:
+         FamilyCar
+         SportCar
 
 Create a base class Vehicle. It should contain the following attributes:
     • DEFAULT_FUEL_CONSUMPTION: float (constant)
