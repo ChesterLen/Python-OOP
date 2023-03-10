@@ -10,3 +10,14 @@ Create a Child class that inherits Person and has the same constructor definitio
 
     2. Zoo
 Create a zoo project that contains the following classes:
+
+    Animal:
+      Reptile:
+         Lizard
+         Snake
+      Mammal:
+         Gorilla
+         Bear
+
+Follow the diagram and create all the classes. Except for the Animal class, each class should inherit from another class, as shown in the diagram. The Animal class should receive a name - string upon initialization.
+Every class should have a constructor, which accepts one parameter: name
