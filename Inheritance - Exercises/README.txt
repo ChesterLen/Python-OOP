@@ -12,13 +12,14 @@ Create a Child class that inherits Person and has the same constructor definitio
 Create a zoo project that contains the following classes:
 
   project:
-    Animal:
-      Reptile:
-         Lizard
-         Snake
-      Mammal:
-         Gorilla
-         Bear
+    __init__.py
+    animal.py:
+      reptile.py:
+         lizard.py
+         snake.py
+      mammal.py:
+         gorilla.py
+         bear.py
 
 Follow the diagram and create all the classes. Except for the Animal class, each class should inherit from another class, as shown in the diagram. The Animal class should receive a name - string upon initialization.
 Every class should have a constructor, which accepts one parameter: name
@@ -34,15 +35,16 @@ Every class should have a constructor, which accepts one parameter: name
 Your task is to create the following game hierarchy:
 
   project:
-       Hero:
-          Elf:
-            Museelf
-          Wizard:
-            DarkWizard
-            SoulMaster
-          Knight:
-            DarkKnight
-            BladeKnight
+       __init__.py
+       hero.py:
+          elf.py:
+            museelf.py
+          wizard.py:
+            darkwizard.py
+            soulmaster.py
+          knight.py:
+            darkknight.py
+            bladeknight.py
 
 Create a class Hero. It should contain the following attributes:
     • username: string
@@ -63,13 +65,14 @@ Override the __str__() method of the base class so it returns: "{name} of type {
 Create the following hierarchy with the following classes:
 
    project:
-       Vehicle:
-         Motorcycle:
-         RaceMotorcycle
-         CrossMotorcycle
-       Car:
-         FamilyCar
-         SportCar
+       __init__.py
+       vehicle.py:
+         motorcycle.py:
+         racemotorcycle.py
+         crossmotorcycle.py
+       car.py:
+         familycar.py
+         sportcar.py
 
 Create a base class Vehicle. It should contain the following attributes:
     • DEFAULT_FUEL_CONSUMPTION: float (constant)
