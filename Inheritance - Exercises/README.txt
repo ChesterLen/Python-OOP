@@ -81,3 +81,18 @@ The default fuel consumption for the different vehicles is:
     • SportCar is 10
     • RaceMotorcycle is 8
     • Car is 3
+
+    Test code: vehicle = Vehicle(50, 150)                          Output: 1.25
+               print(Vehicle.DEFAULT_FUEL_CONSUMPTION)                     3
+               print(FamilyCar.DEFAULT_FUEL_CONSUMPTION)                   50
+               print(vehicle.fuel)                                         150
+               print(vehicle.horse_power)                                  1.25
+               print(vehicle.fuel_consumption)                             50
+               vehicle.drive(100)                                          0
+               print(vehicle.fuel)                                         0
+               family_car = FamilyCar(150, 150)                            Car
+               family_car.drive(50)
+               print(family_car.fuel)
+               family_car.drive(50)
+               print(family_car.fuel)
+               print(family_car.__class__.__bases__[0].__name__)
