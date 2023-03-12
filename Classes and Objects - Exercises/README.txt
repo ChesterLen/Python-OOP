@@ -350,4 +350,4 @@ In the registration.py, create a class called Registration. Upon initialization,
 
                 ----------------------------------------------------
 
-    Output: 12, Peter, ['The Deathly Hallows'
+    Output: 12, Peter, ['The Deathly Hallows']
