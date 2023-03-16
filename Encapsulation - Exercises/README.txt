@@ -367,3 +367,20 @@ Cake is a dessert. Also, it must have the following class attributes which shoul
     • GRAMS = 250 (constant)
     • CALORIES = 1000 (constant)
     • PRICE = 5 (constant)
+
+    Test code: product = Product("coffee", 2.5)                        Output: Product
+               print(product.__class__.__name__)                               coffee
+	       print(product.name)                                             2.5
+	       print(product.price)                                            Beverage
+	       beverage = Beverage("coffee", 2.5, 50)                          Product
+	       print(beverage.__class__.__name__)                              coffee
+	       print(beverage.__class__.__bases__[0].__name__)                 2.5
+	       print(beverage.name)                                            50
+	       print(beverage.price)                                           Soup
+	       print(beverage.milliliters)                                     Starter
+	       soup = Soup("fish soup", 9.90, 230)                             fish soup
+	       print(soup.__class__.__name__)                                  9.9 
+               print(soup.__class__.__bases__[0].__name__)                     230
+               print(soup.name)
+	       print(soup.price)
+	       print(soup.grams)
